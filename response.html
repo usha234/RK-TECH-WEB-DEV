@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        text-align: center;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1 {
+        color: #4CAF50;
+    }
+
+    p {
+        color: #333;
+        font-size: 18px;
+    }
+
+    img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .b {
+        height: 100%;
+        background-image: url("adm.jpg");
+        background-repeat: no-repeat;
+        background-size: cover, contain;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .bg-1 {
+        z-index: 0;
+        background: linear-gradient(to right, rgba(149, 14, 127, 0.179) 30%, rgba(242, 212, 20, 0.667) 65%, rgba(177, 30, 179, 0.5));
+        background-size: 200% 200%;
+        animation: gradient-animation 16s ease infinite;
+        padding-left: 10px;
+        height: 40%;
+        padding-top: 6%;
+        position: absolute;
+        border-radius: 0px 0px 25% 25%/40%;
+    }
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: 0% 50%;
+        }
+        25% {
+            background-position: 50% 100%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        75% {
+            background-position: 50% 0%;
+        }
+        100% {
+            background-position: 0% 50;
+        }
+    }
+    .button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: #fff;
+  border: 2px solid #3498db;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: violet;
+  color: #fff;
+}
+
+.button:focus {
+  outline: none;
+}
+
+
+.con {
+  margin: 50px auto;
+  text-align: center;
+} 
+  
+</style>
+
+
+
+
+
+</head>
+<body>
+    <div class="b"></div>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-E5zmb43hrAVwRn85kS5WNrqrn_FjsalL6g&usqp=CAU" alt="Thank You">
+        <h1>Thank You for Your Response!</h1>
+        <p>We appreciate your feedback.</p>
+    </div>
+    
+    <button><a href="admin.html" class="button">Back</a></button>    
+    
+</body>
+</html>
